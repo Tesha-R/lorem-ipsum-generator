@@ -1,0 +1,388 @@
+/* Light gray - #F4FAFF 
+text - color: #606c76;
+border - #CCD4D8
+link, buttons - #00b6de;
+*/
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #606c76;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+/* Utility
+   ========================================================================== */
+a {
+  color: #00b6de;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.bold {
+  font-weight: 700;
+}
+.semi-bold {
+  font-weight: 500;
+}
+.italic {
+  font-style: italic;
+}
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.left-align {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right-align {
+  text-align: right;
+}
+.mg0 {
+  margin: 0;
+}
+.pd0 {
+  padding: 0;
+}
+.b-radius {
+  border-radius: 6px;
+}
+.hide {
+  display: none;
+}
+.box {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+  display: block;
+  padding: 1.25rem;
+}
+.flex-center {
+  justify-content: center;
+}
+.align-base {
+  align-items: baseline;
+}
+.display-flex {
+  display: flex;
+}
+/* Type
+   ========================================================================== */
+h1,
+.h1 {
+  font-size: 3rem;
+}
+h2,
+.h2 {
+  font-size: 2.5rem;
+}
+h3,
+.h3 {
+  font-size: 2rem;
+}
+h4,
+.h4 {
+  font-size: 1.5rem;
+}
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+h6,
+.h6 {
+  font-size: 1.15rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+p {
+  font-size: 1.063rem;
+  margin-bottom: 1.5rem;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1.063rem;
+}
+
+/* Table
+   ========================================================================== */
+
+.table {
+  display: table;
+}
+.table-cell {
+  display: table-cell;
+}
+/* Form
+   ========================================================================== */
+label,
+legend {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+input[type="week"],
+input:not([type]),
+textarea,
+select {
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  border: 0.1rem solid #ccd4d8;
+  border-radius: 6px;
+  box-shadow: none;
+  box-sizing: inherit;
+  height: 2.75rem;
+  padding: 0.6rem 1rem 0.7rem;
+  width: 100%;
+  font-size: 1rem;
+}
+textarea {
+  height: 4rem;
+}
+fieldset,
+input,
+select,
+textarea {
+  margin-bottom: 1.5rem;
+}
+input[type="text"],
+select,
+textarea {
+  box-shadow: inset 0 0.0625em 0.125em rgb(10 10 10 / 5%);
+  max-width: 100%;
+  width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+}
+.checkbox-wrap label {
+  display: inline;
+}
+
+/* Buttons
+   ========================================================================== */
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background-color: #ffffff;
+  border: 0.1rem solid #00b6de;
+  border-radius: 6px;
+  color: #00b6de;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 2.5rem;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.btn-blue {
+  background-color: #00b6de;
+  border-color: #00b6de;
+  color: #ffffff;
+}
+.button:focus,
+.button:hover,
+button:focus,
+button:hover,
+input[type="button"]:focus,
+input[type="button"]:hover,
+input[type="reset"]:focus,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+  background-color: #0098ba;
+  border-color: #0098ba;
+  color: #fff;
+  outline: 0;
+}
+
+.button[disabled],
+button[disabled],
+input[type="button"][disabled],
+input[type="reset"][disabled],
+input[type="submit"][disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+
+/* flex
+   ========================================================================== */
+.container {
+  margin: 0 auto;
+  max-width: 80rem;
+  /* max-width: 112rem; */
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+.row {
+  flex-direction: row;
+  display: flex;
+  padding: 0;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.offset-1,
+.offset-10,
+.offset-11,
+.offset-12,
+.offset-2,
+.offset-3,
+.offset-4,
+.offset-5,
+.offset-6,
+.offset-7,
+.offset-8,
+.offset-9 {
+  flex: 0 0 auto;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+.col {
+  display: block;
+  flex: 1 1 auto;
+  /* margin-left: 0; */
+  max-width: 100%;
+}
+.col-1 {
+  width: 8.33333%;
+}
+.col-2 {
+  width: 16.66667%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33333%;
+}
+.col-5 {
+  width: 41.66667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33333%;
+}
+.col-8 {
+  width: 66.66667%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33333%;
+}
+.col-11 {
+  width: 91.66667%;
+}
+.col-12 {
+  width: 100%;
+}
+.offset-0 {
+  margin-left: 0;
+}
+.offset-1 {
+  margin-left: 8.33333333%;
+}
+.offset-2 {
+  margin-left: 16.66666667%;
+}
+.offset-3 {
+  margin-left: 25%;
+}
+.offset-4 {
+  margin-left: 33.33333333%;
+}
+.offset-5 {
+  margin-left: 41.66666667%;
+}
+.offset-6 {
+  margin-left: 50%;
+}
+.offset-7 {
+  margin-left: 58.33333333%;
+}
+.offset-8 {
+  margin-left: 66.66666667%;
+}
+.offset-9 {
+  margin-left: 75%;
+}
+.offset-10 {
+  margin-left: 83.33333333%;
+}
+.offset-11 {
+  margin-left: 91.66666667%;
+}
+/*  60rem = 960 */
